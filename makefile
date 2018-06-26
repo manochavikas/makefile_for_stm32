@@ -6,7 +6,7 @@ TARGET = GPIO_IOToggle
 
 include config_common.mk
 #include $(BOARD_PATH)/board_config.mk
-include board_config.mk
+include config_board.mk
 
 # if board_config not present in top directory, then error
 # echo "board_config not present,please configure the board"
