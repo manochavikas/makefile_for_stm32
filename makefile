@@ -3,10 +3,10 @@
 BOARD_PATH = Projects/NUCLEO-G071RB
 PROJECT_PATH = Examples/GPIO/GPIO_IOToggle
 TARGET = GPIO_IOToggle
+MAKEFILE_PATH = makefile_for_stm32
 
-include config_common.mk
-#include $(BOARD_PATH)/board_config.mk
-include config_board.mk
+include $(MAKEFILE_PATH)/config_common.mk
+include $(MAKEFILE_PATH)/config_board.mk
 
 # if board_config not present in top directory, then error
 # echo "board_config not present,please configure the board"
